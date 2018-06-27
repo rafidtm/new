@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Information</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="Font-Awesome-master/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap.min.css">
+	<!-- <script type="text/javascript" src= "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  	</script> -->
+  	<script type="text/javascript" src="js/jquery.js"></script>
+
+  	
+  	<script type="text/javascript" src="bootstrap1/js/bootstrap.min.js"></script>
+  	
+  	<script src="js/wow.min.js"></script>
+    
+    
+	
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	
+  	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+</head>
+<body>
+	<div id="navbar" class="navbar navbar-default navbar-fixed-top navbar-inverse" 
+	role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="dashboard.php" class="navbar-brand">Admin Panel</a>
+				<p class="navp">XYZ HIGH SCHOOL</p>
+			</div>
+			<div class="navbar-collapse navbar-collapse collapse navc">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<p>Hello Admin</p>
+					</li>
+
+					<li>
+						<a href="#services">Log Out</a>
+					</li>
+					
+				</ul>
+			</div>
+
+		</div>
+		
+	</div>
+
+	<!-- Mid -->
+
+<nav class="navbar navbar-inverse visible-xs navbar-fixed-top" id="navbar2">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#section1">Dashboard</a></li>
+			<li><a href="#section2">Student Information</a></li>
+			<li><a href="#section3">Student Attendance</a></li>
+			<li><a href="#section3">Bulk Sms</a></li>
+			<li><a href="#section3">Result Processing</a></li>
+			<li><a href="#section3">Teacher Login	</a></li>
+	      </ul>
+	    </div>
+	  </div>
+</nav>
+
+	
+		<div class="container-fluid" style="background-color: #fff;">
+			<div class="row content" >
+				<div class="col-sm-3 sidenav hidden-xs navbar-fixed-top">
+
+					<ul class="nav nav-pills nav-stacked">
+						
+				        <li class="dropdown">
+
+				        	
+							    <button class="btn btn-primary dropdown-toggle" 
+							    type="button" data-toggle="dropdown">Manage Car
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu">
+							      <li><a href="new_car.php" >New Car</a></li>
+							      <li><a href="car_list.php">Car List</a></li>
+							    </ul>
+						 	
+				        </li>
+				        <li class="dropdown">
+				        	
+							   <button class="btn btn-primary dropdown-toggle" 
+							    type="button" data-toggle="dropdown">Manage Driver
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu">
+							      <li><a href="new_driver.php">New Driver</a></li>
+							      <li><a href="driver_info">Show Information</a></li>
+							      
+							    </ul>
+				        </li>
+				        
+				        
+				        <li class="dropdown">
+				        	
+							    <button class="btn btn-primary dropdown-toggle" 
+							    type="button" data-toggle="dropdown">Manage Car Allotement
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu">
+							      <li><a href="new_car_allot.php">New Entry</a></li>
+							      <li><a href="car_allot_last_amount.php">Last Amount</a></li>
+							     
+							    </ul>
+						 	
+				        </li>
+				        <li class="dropdown">
+				        	
+							    <button class="btn btn-primary dropdown-toggle" 
+							    type="button" data-toggle="dropdown">Manage Car Expenditure
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu">
+							      <li><a href="new_car_exp.php">New Entry</a></li>
+							      <li><a href="car_exp_last_amount.php">Last Amount</a></li>
+							     
+							    </ul>
+						 	
+				        </li>
+      				</ul><br>
+				</div>
+				</div>
+				<br>
+
+				<div class="row" id="row_form">
+					
+					<div class="col-sm-12 col-md-12" id="row_1st_col" style="">
+							<form class="form-horizontal fixed" id="form-horizontal"  action="/action_page.php">
+								
+
+								
+							
+								<div class=" " id="f1" style="" >
+								<div class="pinformation">
+						    	<h1>Last Amount</h1>
+						        </div>
+						        
+						    	<label for="cno">Car Registration No</label>
+								    <input type="text" id="crno" name="crno" placeholder="Car Registration No...">
+
+								    <label for="afromdate">From</label>
+								    <input type="date" id="afromdate" name="afromdate" >
+								    <label for="atomdate">To</label>
+								    <input type="date" id="atodate" name="atodate" >
+
+								  
+								    <input type="submit" value="Submit" id="csub" name="submit">
+								</div>
+							</form>
+					</div>
+				</div>
+				
+
+				</div>
+			</div>
+		</div>
+	
+</body>
+</html>
